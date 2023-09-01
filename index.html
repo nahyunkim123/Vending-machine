@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending machine</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+   
+    <!-- 자판기 -->
+
+    <div class="vending"> 
+        <h3>VENDING MACHINE</h3>
+        <div class="vending-wrap">
+            <div class="screen">
+                <div class="beverage" data-name="콜라"  data-price ="2000">
+                    <img src="images/bottle.png" alt="bottle"">
+                    <button><p id="name">콜라</p></button>
+                    <div class="price">2000원</div>
+                </div>
+                <div class="beverage" data-name="소다"  data-price ="1500">
+                    <img src="images/soda.png" alt="">
+                    <button><p id="name">소다</p></button>
+                    <div class="price">1500원</div>
+                </div>
+                <div class="beverage" data-name="EnergyDrink"  data-price ="2500">
+                    <img src="images/energy-drink.png" alt="">
+                    <button><p id="name">에너지 <br>드링크</p></button>
+                    <div class="price">2500원</div>
+                </div>
+                <div class="beverage" data-name="크림소다"  data-price ="4500">
+                    <img src="images/cream-soda.png" alt="">
+                    <button><p id="name">크림소다</p></button>
+                    <div class="price">4500원</div>
+                </div>
+            
+                <div class="beverage" data-name="파인애플 주스"  data-price ="4000">
+                    <img src="images/pineapple-juice.png" alt="pineapple-juice">
+                    <button><p id="name">파인애플 <br> 주스</p></button>
+                    <div class="price">4000원</div>
+                </div>
+                <div class="beverage" data-name="Mango"  data-price ="3500">
+                    <img src="images/mango-juice.png" alt="mango-juice">
+                    <button><p id="name">망고주스</p></button>
+                    <div class="price">3500원</div>
+                </div>
+                <div class="beverage" data-name="Milk"  data-price ="1000">
+                    <img src="images/milk-bottle.png" alt="">
+                    <button><p id="name">우유</p></button>
+                    <div class="price">1000원</div>
+                </div>
+                <div class="beverage" data-name="Water"  data-price ="500">
+                    <img src="images/ramune.png" alt="">
+                    <button><p id="name">생수</p></button>
+                    <div class="price">500원</div>
+                </div>
+                <div class="beverage" data-name="Strawberry"  data-price ="5300">
+                    <img src="images/strawberry-milk.png" alt="strawberry-milk">
+                    <button><p id="name">딸기우유</p></button>
+                    <div class="price">5300원</div>
+                </div>
+            </div>
+
+
+            <div class="right-screen">
+                <div class="itemList">
+                    <p>선택한 음료</p>
+                    <ul id="selectedItems"></ul>
+                </div>
+                <div class="total">
+                    <div class="text-wrap">
+                        <p>총 <span id="totalPrice"></span> 원</p> 
+                    </div>
+                   
+                </div>
+                <div class="money">
+                    <input id="input-money" type="number" placeholder="지폐투입구">
+                    <button id="input-btn">투입</button>
+                </div>
+              
+                <div class="change">
+                    <div class="text-wrap">
+                        <p>잔돈 <span id ="change"></span> 원</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="output">
+
+            </div>
+
+        </div>
+    </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+// color :#F5D0E2(pink) #DE434A(red), #3F2A55 (purple),#f7f7fe
+@charset "utf-8";
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'S-CoreDream-3Light';
+padding: 0;margin: 0;}
+ul{list-style: none;}
+
+
+.vending{
+    width: 100%;
+    height: 100%;
+    h3{ width: 200px;
+        margin: 18px auto;
+        font-family: 'Cafe24ClassicType-Regular';
+        font-size: 45px;
+        color: gold;
+        text-shadow: 2px 0 4px #606060;
+    }//h3
+    .vending-wrap{
+        width: 530px;
+        height: 730px;
+        background-color: #F5D0E2;
+        border: 5px solid #3F2A55;
+        border-radius: 10px;
+        margin: 22px auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        .screen{
+            border: 1px solid #ebebeb;
+            border-radius: 8px;
+            height: 68%;
+            width: 315px;
+            margin: 0 7px;
+            margin-top: 30px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,110px);
+            grid-template-rows: repeat(3,175px);
+            text-align: center;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+            button{
+                width: 70%;
+                height: 37px;
+                font-size: 13px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background-color: #DE434A;
+                color: #f7f7fe;
+                font-weight: bold;
+            }
+            .price{margin-top: 2px; font-size: 14px; font-weight: bold;}
+        }//screen
+        .right-screen{
+            width: 170px;
+            height: 600px;
+            margin-top: 32px;
+            .itemList{
+                padding: 5px;
+                width: 90%; 
+                height: 350px;
+                background-color: #f7f7fe;
+                border-radius: 3px;
+                margin-bottom: 20px;
+                p{  margin: 3px;
+                   font-weight: bold;
+                   padding-bottom: 6px;
+                   color: #3F2A55;
+                }
+                overflow: hidden;
+            }//itemList
+            .total{
+                width: 90%;
+                height: 35px;
+                align-items: center;
+                display: flex;
+                margin-bottom: 12px;
+                background-color: #f7f7fe;
+                border-radius: 3px;
+                padding-left: 3px;
+                .text-wrap{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: bold;
+                   
+                }
+                button{
+                    width: 50px; height: 30px; border: none; border-radius: 10px;background-color: #3F2A55;  color: rgb(240, 240, 240); cursor: pointer;
+                }
+            }
+            .money{
+                width: 90%;
+                height: 40px;
+                display: flex;
+                margin-bottom: 12px;
+                input{
+                    width: 80%;
+                    border: none;
+                    border-radius: 3px;
+                    margin-right: 3px;
+                    &::placeholder{
+                        padding-left: 5px;
+                        font-size: 12px;
+
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                button{width: 50px; border: none; border-radius: 10px;background-color: #3F2A55;
+                    cursor: pointer;
+                    color: rgb(240, 240, 240);
+            
+                } //button
+            }//money
+            .change{
+                padding-left: 3px;
+                width: 90%;
+                height: 35px;
+                background-color: #f7f7fe;
+                border-radius: 3px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                .text-wrap{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-weight: bold;
+                    
+                }
+             
+            }
+
+        }//right-screen
+        #output{
+            position: absolute;
+            left: 27px;
+            bottom: 0px;
+            width: 90%;
+            height: 160px;
+            border-radius: 5px;
+            background: #f7f7fe;
+        }
+    }//vending-wrap
+
+}
