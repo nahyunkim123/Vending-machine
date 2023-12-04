@@ -59,5 +59,3 @@ inputBtn.addEventListener('click', () => {
         alert('금액이 부족합니다.');
     }
 });
-
-
