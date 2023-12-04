@@ -35,19 +35,19 @@ beverage.forEach((beverage, idx) => {
 inputBtn.addEventListener('click', () => {
     const inputMoneyValue = parseFloat(inputMoney.value);
 
-    // 투입된 금액이 총 금액보다 큰 경우
+
     if (inputMoneyValue >= totalPrice) {
         const change = inputMoneyValue - totalPrice;
         changeEle.textContent = change;
 
-        // 선택한 음료수를 output 영역에 표시하기
+        //  output 표시
         itemList.forEach((item) => {
             const paidItemElement = document.createElement('div');
             paidItemElement.textContent = ` ${item.beverageName}`;
             paidItem.appendChild(paidItemElement);
         });
 
-        // 초기화
+      
         itemList = [];
         totalPrice = 0;
         index = 0;
