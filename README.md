@@ -1,5 +1,6 @@
 # 음료 자판기
-Beverage vending machine
+ > 주소 : 
+  https://nahyunkim123.github.io/Vending-machine/
 
 ## 목차
 - [메인화면](#메인화면)
@@ -20,6 +21,7 @@ Beverage vending machine
 - 선택된 음료 리스트 출력
 - 선택 음료 가격 출력
 - 음료 투입 잔돈 계산
+- 선택 음료 텍스트 출력
 
 <br>
 <br>
